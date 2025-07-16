@@ -21,7 +21,19 @@ public class Lesson6 {
 
 	public static void main(String[] args) {
 		/*ここから記入*/
+		String[] names = {"鈴木","田中","佐藤"};
+		
+		String mergeString = "";
 
+		for (int i = 0; i < names.length; i++) {
+			mergeString += names[i];
+			if (i < names.length - 1) {
+				mergeString += ",";
+			}
+		}
+		
+		System.out.println("カンマ区切りで配列を出力します");
+		System.out.println(mergeString);
 	}
 
 }

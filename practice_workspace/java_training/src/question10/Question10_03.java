@@ -19,7 +19,7 @@ public class Question10_03 {
 			} while (n <= 10);
 
 			System.out.println("処理を終了します");
-		System.out.println("2回目の繰り返し処理です");
+		
 	}
 
 }

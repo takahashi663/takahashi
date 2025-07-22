@@ -39,7 +39,11 @@ package day06.q01;
 class Main {
 
 	public static void main(String[] args) {
-		/*ここから記入*/
+		System.out.println("シェアード電話に加入しました");
+		Phone phone = new Phone();
+		Phone intFee;
+		Phone call;
+		Phone getFee;
 
 	}
 

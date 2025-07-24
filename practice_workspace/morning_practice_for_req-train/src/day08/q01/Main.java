@@ -45,6 +45,8 @@
 
 package day08.q01;
 
+import day08.Sorcerer;
+
 class Main {
 
 	public static void main(String[] args) {
@@ -57,7 +59,13 @@ class Main {
 		magic.attack(magicMp);
 
 		/*ここから記入*/
-
+		Sorcerer sorcerer = new Sorcerer("リィル");
+		
+		int sorcererMp = 20;
+		
+		sorcerer.attack(sorcererMp);
+		
+		
 	}
 
 }

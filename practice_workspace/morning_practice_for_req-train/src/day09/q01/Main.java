@@ -46,8 +46,19 @@ import java.io.IOException;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		// ここに記述
+		HumanPlayer p1 = new HumanPlayer("Annika");
+		ComPlayer cp = new ComPlayer();
+		
+		Playable winner = JankenBattle.doBattle(p1, (Playable) cp);
+		
+		if (winner == null) {
+			System.out.println("あいこです");
+		} else if (winner.equals(p1)) {
+			System.out.println(p1.getName() + "さんの勝ちです");
+		} else if (winner.equals(cp)) {
+			System.out.println(cp + "さんの勝ちです");
 
+		}
 	}
 
 }

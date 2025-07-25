@@ -69,12 +69,25 @@
 package day08.q02;
 
 import day08.q01.Magic;
+import day08.q01.Sorcerer;
 
 public class Main2 {
 
 	public static void main(String[] args) throws InterruptedException {
 		Magic magic = new Magic("魔法使い");// 名前を引数に入力
 		/*ここから記入*/
+		Magic sorcerer = new Sorcerer("魔導士");// 名前を引数に入力
+		Monster monster = new Monster("スライム", 10);// 名前とｈｐを引数に入力
+
+		int turn = 1;
+		while (monster.getHp() > 0) {
+			System.out.println(turn + "ターン目の攻撃！！");
+			// それぞれ魔法力（任意の整数）とmonsterを引数に入力
+			magic.attack(20, monster);
+			sorcerer.attack(30, monster);
+			turn++;
+		}
+		System.out.println(turn + "ターン目で" + monster.getName() + "を倒した!!");
 
 	}
 

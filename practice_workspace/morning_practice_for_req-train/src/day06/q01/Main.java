@@ -41,9 +41,11 @@ class Main {
 	public static void main(String[] args) {
 		System.out.println("シェアード電話に加入しました");
 		Phone phone = new Phone();
-		Phone intFee;
-		Phone call;
-		Phone getFee;
+		phone.intitFee();
+		phone.call();
+		phone.call();
+		
+		System.out.println("今月の料金は" + phone.getFee() + "です");
 
 	}
 

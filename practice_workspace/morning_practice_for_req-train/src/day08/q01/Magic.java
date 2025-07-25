@@ -1,5 +1,7 @@
 package day08.q01;
 
+import day08.q02.Monster;
+
 public class Magic {
 	private String name;
 
@@ -13,5 +15,18 @@ public class Magic {
 		int damege = (int) (Math.random() * mp) + 10;
 		System.out.println("相手に" + damege + "のダメージ！！");
 	}
+	public void attack(int mp, Monster monster) {
+		System.out.println("\n" + name + "の攻撃！！");
+		int damege = (int) (Math.random() * mp) + 10;
+		// 「モンスター名に・・・のダメージ」と表示
+		System.out.println(monster.getName() + "に" + damege + "のダメージ！！");
+		// モンスターのHPを取得し、ダメージを減らしてからセットしなおす。
+		int monsterHP = monster.getHp() - damege;
+		monster.setHp(monsterHP);
+	}
+	
+		
+		
+	}
 
-}
+

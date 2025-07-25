@@ -45,8 +45,6 @@
 
 package day08.q01;
 
-import day08.Sorcerer;
-
 class Main {
 
 	public static void main(String[] args) {

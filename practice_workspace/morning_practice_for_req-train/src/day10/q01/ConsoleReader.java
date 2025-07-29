@@ -3,6 +3,7 @@ package day10.q01;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.regex.Pattern;
 
 public class ConsoleReader {
 
@@ -15,7 +16,10 @@ public class ConsoleReader {
 		String inputString = br.readLine();
 
 		/* ここに記述 */
-
+		Pettern pin = Pattern.comp("~\\d{4}");
+			
+		
+		
 		/* 記述終了 */
 
 		pin = Integer.parseInt(inputString);
